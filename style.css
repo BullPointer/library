@@ -1,0 +1,21 @@
+:root {
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    background: #f1f3f8;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-weight: bold;
+    background: #f8fafc;
+}
+nav div {
+    color: #7dd3fc;
+    background: #f8fafc;
+    font-size: xx-large;
+}

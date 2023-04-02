@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stying-folder/book.css">
+    <link rel="stylesheet" href="stying-folder/form.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div>LIBRARY</div>
+    </nav>
+    <div class="new-book"><div id="new-box" class="click-book">New Book</div></div>
+    <div   class="form-box">
+        <form id="new-box" onsubmit="AddBookToLibrary(e)" action="" method="post" class="form">
+            <div>Add Your New Book</div>
+            <div>
+                <label for="author">Author</label>
+                <input id="author" class="authorInput" type="text" placeholder="AUTHOR">
+            </div>
+            <div>
+                <label for="title">TITLE</label>
+                <input id="title" class="titleInput" type="text" placeholder="TITLE">
+            </div>
+            <div>
+                <label for="pagenum">Number of Pages</label>
+                <input id="pagenum" class="numOfPagesInput" type="text" placeholder="NUMBER OF PAGES">
+            </div>
+            <div>           
+                <label for="checkBox">HAS BEEN READ?  </label>
+                <input id="checkBox" type="checkbox">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        
+    </div>
+    <div class="container"></div>
+    <script src="js-folder/addToLib.js"></script>
+    <script src="js-folder/mapBooks.js"></script>
+    <script src="js-folder/editBook.js"></script>
+    <script src="js-folder/removeBook.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

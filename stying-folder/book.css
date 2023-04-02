@@ -1,0 +1,84 @@
+:root {
+    --book-width: 700px
+}
+.new-book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: rgb(173, 173, 233);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+}
+.new-book div {
+    color: white;
+    background: rgb(173, 173, 233);
+    padding: 10px;
+    border-radius: 5px;
+}
+.new-book div:hover {
+    background: rgb(218, 218, 241);
+    cursor: pointer;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 1rem;
+    box-sizing: border-box;
+    margin: 35px;
+}
+.container .book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid #7dd3fc;
+    background: #f8fafc;
+    border-radius: 20px;
+}
+.container .book .txt{
+    background: #f8fafc;
+    padding: 15px;
+}
+.container .book .editBtn{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #7dd3fc;
+    font-weight: bolder;
+    font: 1.2em sans-serif;
+    background: #cdd3da;
+    color: white;
+}
+.container .book .editBtn:hover{
+    cursor: pointer;
+}
+.container .book .rmBtn{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 7px;
+    border: 1px solid #7dd3fc;
+    font-weight: bolder;
+    font: 1.2em sans-serif;
+    background: #dd9497;
+    color: white;
+}
+.container .book .rmBtn:hover{
+    cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        font-size: small;
+    }
+}

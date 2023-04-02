@@ -1,0 +1,79 @@
+/* :root {
+    --opaval: 0;
+} */
+.form-box { 
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.form-box .form {
+    display: flex;
+    flex-direction: row;
+    row-gap: 8px;
+    position: fixed;
+    padding: 20px 50px 200px 50px;
+    height: 140px;
+    border-radius: 5px;
+    background: rgb(192, 192, 196);
+    z-index: 2;
+    display: none;
+    /* transition: display 1s ease-in-out; */
+}
+.form-box .form div {
+    background: rgb(192, 192, 196);
+    color: white;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+    font-style: oblique;
+}
+.form-box .form label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(149, 149, 192);
+    background: rgb(192, 192, 196);
+
+}
+.form-box .form input:focus {
+    border: none;
+    outline: none;
+}
+.form-box .form input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+}
+.form-box .form input, button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: large;
+}
+.form-box .form button{
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    background: rgb(147, 147, 170);
+}
+@media only screen and (max-width:700px) {
+    .form-box .form {
+        width: 50%;
+        padding: 3px 20px 50px 20px;
+        height: 180px;
+    }
+    .form-box .form input, button{
+        padding: 1px;
+        font-size: small;
+
+    }
+    .form-box .form div {
+        font-size: small;
+    }
+    .form-box .form label {
+        font-size: small;
+    }
+}
