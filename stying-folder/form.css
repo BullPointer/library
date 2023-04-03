@@ -45,6 +45,10 @@
     width: 20px;
     height: 20px;
 }
+.form-box .form input[type='number'] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield
+}
 .form-box .form input, button{
     width: 100%;
     padding: 10px;

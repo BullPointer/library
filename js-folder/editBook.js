@@ -11,7 +11,14 @@ function editBookFunc() {
     if (myLibrary.length >= 1) {
       editBtn.addEventListener('click', firstEditFunc);
       function firstEditFunc() {
-        passFunc(editBtn);
+        formBox.style.display = 'block';
+        const bookObj = myLibrary.find((lib) => lib['_id'] === editBtn.id);
+        formBox.name = 'edit';
+        formBox.nonce = editBtn.id;
+        author.value = bookObj.author;
+        titleInput.value = bookObj.title;
+        numOfPagesInput.value = bookObj.numOfPages;
+        checkBox.checked = Boolean(bookObj.isRead);
       }
     }
 
@@ -20,19 +27,16 @@ function editBookFunc() {
       moreEditBtn.forEach((arr) => {
         arr.addEventListener('click', secondEditFunc);
         function secondEditFunc() {
-          passFunc(arr);
+          formBox.style.display = 'block';
+          const bookObj = myLibrary.find((lib) => lib['_id'] === arr.id);
+          formBox.name = 'edit';
+          formBox.nonce = arr.id;
+          author.value = bookObj.author;
+          titleInput.value = bookObj.title;
+          numOfPagesInput.value = bookObj.numOfPages;
+          checkBox.checked = Boolean(bookObj.isRead);
         }
       });
-    }
-    function passFunc(btnObj) {
-      const bookObj = myLibrary.find((lib) => lib['_id'] === btnObj.id);
-      formBox.style.display = 'block';
-      formBox.name = 'edit';
-      formBox.nonce = btnObj.id;
-      author.value = bookObj.author;
-      titleInput.value = bookObj.title;
-      numOfPagesInput.value = bookObj.numOfPages;
-      checkBox.checked = Boolean(bookObj.isRead);
     }
   }
 }

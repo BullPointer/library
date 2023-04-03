@@ -18,6 +18,7 @@
         "prefer-const": "off",
         "no-undef": "off",
         "no-unused-vars": "off",
-        "no-inner-declarations": "off"
+        "no-inner-declarations": "off",
+        "consistent-return": "off"
     }
 }

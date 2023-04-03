@@ -16,7 +16,7 @@
     </nav>
     <div class="new-book"><div id="new-box" class="click-book">New Book</div></div>
     <div   class="form-box">
-        <form id="new-box" onsubmit="Library(e)" action="" method="post" class="form">
+        <form id="new-box" onsubmit="return Library(e)" action="" method="post" class="form">
             <div>Add Your New Book</div>
             <div>
                 <label for="author">Author</label>
@@ -28,7 +28,7 @@
             </div>
             <div>
                 <label for="pagenum">Number of Pages</label>
-                <input id="pagenum" class="numOfPagesInput" type="text" placeholder="NUMBER OF PAGES">
+                <input oninput="this.value = this.value.replace(/[^0-9]/g,'')" id="pagenum" class="numOfPagesInput" type="number" placeholder="NUMBER OF PAGES">
             </div>
             <div>           
                 <label for="checkBox">HAS BEEN READ?  </label>
@@ -38,11 +38,21 @@
         </form>
         
     </div>
+    <div class="welcome-box">
+        <div class="wrap">
+            <div class="welcome">
+                <div>welcome to Your Library</div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="container"></div>
     <script src="js-folder/addToLib.js"></script>
     <script src="js-folder/mapBooks.js"></script>
     <script src="js-folder/editBook.js"></script>
     <script src="js-folder/removeBook.js"></script>
+    <script src="js-folder/displayWelcome.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
