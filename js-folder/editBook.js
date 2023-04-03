@@ -11,7 +11,7 @@ function editBookFunc() {
     if (myLibrary.length >= 1) {
       editBtn.addEventListener('click', firstEditFunc);
       function firstEditFunc() {
-        passFunc(arr);
+        passFunc(editBtn);
       }
     }
 

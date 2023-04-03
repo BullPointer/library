@@ -1,4 +1,7 @@
-function addBookToLibrary() {
+// Add to Library
+function Library() {}
+
+Library.prototype.addBookToLibrary = () => {
   let formBox = document.querySelector('.form');
   formBox.addEventListener('submit', (btn) => {
     btn.preventDefault();
@@ -37,4 +40,4 @@ function addBookToLibrary() {
       formBox.nonce = '';
     }
   });
-}
+};

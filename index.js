@@ -1,11 +1,7 @@
 let myLibrary = [];
 
-function Book() {}
-
-Book.prototype.books = () => ('Here I am');
-
-function formButton() {
-  // click button something to open form
+function Book() {
+  // click button to open form
   const clickBook = document.querySelector('.click-book');
   const formBox = document.querySelector('.form');
   clickBook.addEventListener('click', () => {
@@ -14,9 +10,8 @@ function formButton() {
   });
 }
 
-// AddBookToLibrary.prototype = Object.create(Book.prototype);
+Book.prototype = Object.create(Library.prototype);
+
 const newBook = new Book();
-newBook.books();
-addBookToLibrary();
+newBook.addBookToLibrary();
 mapBooks();
-formButton();
