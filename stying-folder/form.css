@@ -12,7 +12,8 @@
     row-gap: 8px;
     position: fixed;
     padding: 20px 50px 200px 50px;
-    height: 140px;
+    width: 20%;
+    height: 145px;
     border-radius: 5px;
     background: rgb(192, 192, 196);
     z-index: 2;
@@ -51,7 +52,7 @@
 }
 .form-box .form input, button{
     width: 100%;
-    padding: 10px;
+    padding: 4px;
     border: none;
     border-radius: 5px;
     text-align: center;
@@ -63,21 +64,27 @@
     color: white;
     background: rgb(147, 147, 170);
 }
+.form-box .form .errorMsg {
+    color: red; 
+    font-size: 12px;
+}
 @media only screen and (max-width:700px) {
     .form-box .form {
         width: 50%;
-        padding: 3px 20px 50px 20px;
-        height: 180px;
+        padding: 3px 10px 70px 10px;
+        height: 200px;
     }
     .form-box .form input, button{
-        padding: 1px;
-        font-size: small;
 
+        font-size: small;
     }
     .form-box .form div {
         font-size: small;
     }
     .form-box .form label {
         font-size: small;
+    }
+    .form-box .form .errorMsg {
+        font-size: 9px;
     }
 }

@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     background: rgb(173, 173, 233);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
@@ -103,6 +103,11 @@
 @media only screen and (max-width: 700px) {
     .container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        font-size: small;
+    }
+    .wrap .welcome {
+        width: 50%;
+        height: 50px;
         font-size: small;
     }
 }
