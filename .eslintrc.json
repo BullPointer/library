@@ -19,6 +19,7 @@
         "no-undef": "off",
         "no-unused-vars": "off",
         "no-inner-declarations": "off",
-        "consistent-return": "off"
+        "consistent-return": "off",
+        "class-methods-use-this": "off"
     }
 }
